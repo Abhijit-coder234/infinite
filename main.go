@@ -1,4 +1,8 @@
 package main
+
 import "fmt"
-func main(){
-fmt.Println("hello")}
+
+func main() {
+	fmt.Println("hello")
+	fmt.Println("second commit")
+}
