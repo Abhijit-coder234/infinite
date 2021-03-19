@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Your Details </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body,pre {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
+            
+            input[type=text], select, textarea {
+              width: 25%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+
+            
+            input[type=submit] {
+              background-color: #4CAF50;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+            input[type=submits] {
+              background-color: #f03b3b;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              width: 6%;
+
+            }
+            
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+            
+            .container {
+              border-radius: 5px;
+              background-color: #eeeff0;
+              padding: 20px;
+              width: 50%;
+              margin-left: 30px;
+            }
+
+            .tab {
+              overflow: hidden;
+              border: 1px solid #ccc;
+              background-color: #f1f1f1;
+              width:75%;
+              margin-left: 30px;
+            }
+
+
+            .contain {
+  width: 75%;
+  background-color: #ddd;
+  margin-left: 30px;
+}
+
+.contain1 {
+  width: 75%;
+  background-color: #ddd;
+  margin-left: 30px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #73f377;}
+.css {width: 80%; background-color: #4ea0e4;}
+.js {width: 65%; background-color: #f86055;}
+.php {width: 60%; background-color: #5a5757;}
+
+.css2 {width: 91%; background-color: #4ee473;}
+
+.html1 {width: 50%; background-color: #5b5e5b;}
+.css1 {width: 0%; background-color: #4ea0e4;}
+.js1 {width: 0%; background-color: #f86055;}
+.php1 {width: 0%; background-color: #5a5757;}
+
+            .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 40px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+h1,p,h3{
+  margin-left: 30px;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+            </style>
+    </head>
+    <body>
+        <h1>Details</h1>
+       <div class="container">
+       <form action="/action_page.php">
+        <pre>FirstName                                                                 Last Name</pre>
+       <textarea name="fname" cols="30" rows="1" style = "width: 50%" placeholder="Rohan"></textarea>
+       <textarea name="fname" cols="30" rows="1" style = "width: 40%; margin-left: 20px;" placeholder="Rohan"></textarea>
+       <br>  
+       <pre>Country                                            Gender</pre>
+       <textarea name="lname" cols="30" rows="1" style = "width: 35%" placeholder="India"></textarea>
+       <textarea name="lname" cols="30" rows="1" style = "width: 25%; margin-left: 10px;" placeholder="Male"></textarea>
+       <br>
+        <pre>Describe yourself </pre>
+        <textarea name="lname" cols="50" rows="4" style = "width: 90%" placeholder="Describe yourself in 50 words....."></textarea>
+       <br>
+       <pre>Upload your resume</pre>
+       <input type="file">
+       <br>
+       <br>
+
+       <input type="submit" value="save"> 
+       <input style="margin-right: 30px; width: 65px;" type="submits" value="edit">
+       </form>
+       </div>
+       <br>
+       <br>
+       <hr>
+       <br>
+       <h1> Status Report</h1>
+
+       <div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">Role 1</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Role 2</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Role 3</button>
+          </div>
+          
+          <div id="London" class="tabcontent">
+            <h3>Developer L-3 </h3>
+            <p>Your performance is being reviewed. We will get back to you! Thank you<p>
+            <br>
+            <p>Documentation</p>
+            <div class="contain">
+                <div class="skills html">95%</div>
+              </div>
+              
+              <p>Written Test</p>
+              <div class="contain">
+                <div class="skills css">80%</div>
+              </div>
+              
+              <p>Techincal Interview</p>
+              <div class="contain">
+                <div class="skills js">65%</div>
+              </div>
+              
+              <p>HR interview</p>
+              <div class="contain">
+                <div class="skills php">60%</div>
+              </div>
+          </div>
+
+          <div id="Paris" class="tabcontent">
+            <h3>Testing Engineer L-4</h3>
+            <p>You have been selected. Congratulations!!!</p></p>
+            <br>
+            <p>Documentation</p>
+            <div class="contain">
+                <div class="skills html">90%</div>
+              </div>
+              
+              <p>Written Test</p>
+              <div class="contain">
+                <div class="skills css2">91%</div>
+              </div>
+              
+              <p>Techincal Interview</p>
+              <div class="contain">
+                <div class="skills js">68%</div>
+              </div>
+              
+              <p>HR interview</p>
+              <div class="contain">
+                <div class="skills php">55%</div>
+          </div>
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <h3>Senior Resource Manager</h3>
+            <p>Yet to be reviwed, get back to you soon.</p>
+            <br>
+
+            <p>Documentation</p>
+            <div class="contain1">
+                <div class="skills html1">50%</div>
+              </div>
+              
+              <p>Written Test</p>
+              <div class="contain1">
+                <div class="skills css1">0%</div>
+              </div>
+              
+              <p>Techincal Interview</p>
+              <div class="contain1">
+                <div class="skills js1">0%</div>
+              </div>
+              
+              <p>HR interview</p>
+              <div class="contain1">
+                <div class="skills php1">0%</div>
+              </div>
+          </div>
+          
+          <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          </script>
+       </div>
+
+    </body>
+
+</html>
